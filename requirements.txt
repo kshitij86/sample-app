@@ -103,7 +103,6 @@ pyOpenSSL==19.1.0
 pyparsing==2.4.6
 PyQt5==5.9.2
 pyRFC3339==1.0
-python-apt==1.6.5+ubuntu0.2
 python-dateutil==2.8.1
 python-debian==0.1.32
 pytz==2018.9
