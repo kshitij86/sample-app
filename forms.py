@@ -12,6 +12,8 @@ class RegistrationForm(FlaskForm):
                              validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
+    phone_number = StringField('Phone Number',
+                               validators=[DataRequired(), Length(min=10, max=10)])
     submit = SubmitField('Register')
 
 

@@ -34,11 +34,16 @@ class User(db.Model, UserMixin):
 # Routes
 @app.route('/')
 def index():
+    """ Index page """
     return render_template('index.html')
 
 
 @app.route('/register', methods=["POST", "GET"])
 def register():
+
+    """ View to register a user"""
+
+    # If they try to login again, while logged in or registered.
     if current_user.is_authenticated:
         flash('You are already logged in', category='success')
         return redirect(url_for('protected'))
@@ -63,6 +68,8 @@ def register():
 
 @app.route('/login', methods=["POST", "GET"])
 def login():
+
+    # If they try to login again, while logged in
     if current_user.is_authenticated:
         flash('You are already logged in', category='success')
         return redirect(url_for('protected'))
