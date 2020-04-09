@@ -23,7 +23,6 @@ cryptography==2.8
 cycler==0.10.0
 decorator==4.4.2
 distlib==0.3.0
-distro-info===0.18ubuntu0.18.04.1
 docutils==0.16
 dominate==2.5.1
 filelock==3.0.12
