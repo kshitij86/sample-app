@@ -56,9 +56,6 @@ itsdangerous==1.1.0
 jedi==0.16.0
 Jinja2==2.10.1
 joblib==0.14.1
-jupyter-client==6.0.0
-jupyter-core==4.6.3
-kazam==1.4.5
 keyring==10.6.0
 keyrings.alt==3.0
 kiwisolver==1.1.0
