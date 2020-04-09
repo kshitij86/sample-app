@@ -86,7 +86,8 @@ def login():
 @login_required
 def protected():
     """ Cannot be accessed by unauthenticated users. """
-    return render_template('protected.html')
+    user = list(User.query.all())
+    return render_template('protected.html', user=user)
 
 
 @app.route('/logout')
